@@ -1,0 +1,6 @@
+id,category,expect,question,answer,sources,pass,failed_checks,missing_facts,invented_numbers,judge_faithful,judge_helpful,judge_unsupported,MY_GRADE_1to5,MY_NOTES
+F087,fact,answer,How much vacation pay do I owe my employees?,"To determine how much vacation pay you owe your employees, you need to consider the length of their employment and the applicable rate of pay.
+
+According to [1], most employees who have worked less than five years at their job earn at least 4% of their wages as vacation pay, while those who have worked five or more years earn at least 6% of their total wages as vacation pay.
+
+Since the sources do not provide a specific formula or threshold for calculating vacation pay, you should confirm with a lawyer or accountant to ensure you are meeting your obligations under the Employment Standards Act.",https://www.ontario.ca/document/your-guide-employment-standards-act-0/small-business,PASS,,,,,,,,

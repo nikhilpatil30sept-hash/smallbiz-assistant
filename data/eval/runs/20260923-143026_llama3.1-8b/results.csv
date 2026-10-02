@@ -1,0 +1,23 @@
+id,category,expect,question,answer,sources,pass,failed_checks,missing_facts,invented_numbers,judge_faithful,judge_helpful,judge_unsupported,MY_GRADE_1to5,MY_NOTES
+F021,fact,answer,Do I have to register a sole proprietorship in Ontario?,"According to [1], if your business has employees, facilities, or offices in Ontario, you must register your sole proprietorship using the Ontario Business Registry. Since a sole proprietorship is a business owned by one person, and it is not specified that the business has employees, facilities, or offices in Ontario, it is not clear if registration is required. However, it is recommended to confirm with a lawyer or accountant to ensure compliance with all regulations.
+
+Recommendation: Confirm with a lawyer or accountant to ensure compliance with all regulations.",https://www.ontario.ca/page/business/start/decide-ownership-structure; https://www.ontario.ca/page/business/start/register-your-business-online; https://www.ontario.ca/page/business/start,FAIL,facts,own name/your own name,,,,,,
+F060,fact,answer,Who should I contact about the location for my business?,"Based on the sources provided, it is not clear who to contact specifically about the location for your business. However, [1] mentions ""Choosing a location for your business"" as a topic, but it does not provide a contact or agency to reach out to.
+
+A plausible next step would be to contact the Ontario Business Registry or ServiceOntario, as they may be able to provide guidance on business location requirements. Alternatively, you may want to consult with a lawyer or accountant for more specific advice.
+
+It is recommended that you confirm with a lawyer or accountant to ensure you are meeting all the necessary requirements for your business location.",https://www.canada.ca/en/services/business/start/planning.html; https://www.canada.ca/en/services/business/start/register-with-gov.html; https://www.ontario.ca/page/business/start/conduct-market-research,FAIL,facts,Business Improvement/BIA,,,,,,
+U015,followup,answer,I have a temporary SIN starting with 9. / How do I get a GST/HST number?,"You can get a GST/HST number by registering for a GST/HST account or changing or closing your account [2]. You can also register for a GST/HST account online, even if you have a SIN that starts with 9 [2]. 
+
+A lawyer or accountant can help with the GST/HST registration process and ensure that your business is meeting all the necessary requirements. It's also recommended to confirm with the Canada Revenue Agency (CRA) to ensure that you are following the correct procedures.",https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html; https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/checklist-small-businesses.html,FAIL,facts,Business Registration Online/BRO,,,,,,
+N011,not_in_kb,no_source_general,How often do I have to file my HST return?,"According to [1], under the section ""File your GST/HST return"", it states that you need to file your GST/HST return when and how to file a return for each period, confirm and make changes after you file. However, it does not specify the frequency of filing.
+
+Since you have to file your GST/HST return for each period, and the period is not specified, it is not clear how often you need to file your HST return.
+
+A lawyer or accountant can help confirm the specific requirements for your business.",https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html; https://www.ontario.ca/page/business/start/confirm-hst,FAIL,hedged,,,,,,,
+N016,not_in_kb,no_source_general,What interest rate should I expect on a small business loan?,"Neither of the sources provided addresses the interest rate on a small business loan. 
+
+A lawyer or accountant can help with questions about small business loans. 
+
+It is recommended that you confirm with a lawyer or accountant to discuss the interest rate on a small business loan and its implications for your business.",; https://www.ontario.ca/document/your-guide-employment-standards-act-0/small-business,PASS,,,,,,,,
+N019,not_in_kb,no_source_general,How much does it cost to incorporate federally?,"According to [2], if you are registering as a Business Corporation, the registration fee is $300.",https://www.ontario.ca/page/business/start/decide-ownership-structure; https://www.ontario.ca/page/business/start/register-your-business-online; https://www.canada.ca/en/services/business/start.html; https://www.canada.ca/en/services/business/start/register-with-gov.html; https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-expenses/business-start-costs.html,FAIL,hedged,,,,,,,

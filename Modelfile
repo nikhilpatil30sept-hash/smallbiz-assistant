@@ -1,0 +1,1 @@
+FROM ./smallbiz-lora-merged.gguf

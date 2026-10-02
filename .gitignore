@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+*.gguf
+lora_out/
+lora_out.zip
+base_config/
+chroma_db/
+.DS_Store

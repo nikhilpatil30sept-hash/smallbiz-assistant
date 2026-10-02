@@ -1,0 +1,1 @@
+{"id": "F087", "category": "fact", "expect": "answer", "question": "How much vacation pay do I owe my employees?", "turns": ["How much vacation pay do I owe my employees?"], "expected_facts": [["4%"], ["6%"]], "expected_sources": ["guide-employment-standards-act-0"], "forbidden": []}

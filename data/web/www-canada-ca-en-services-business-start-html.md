@@ -1,0 +1,64 @@
+---
+source_url: https://www.canada.ca/en/services/business/start.html
+title: Starting a business
+license: crown_noncommercial
+fetched: 2026-09-23
+---
+
+# Starting a business
+
+The steps to consider before operating a business in Canada.
+
+## Most requested
+
+- Support for business innovation
+- Create a federal corporation
+- Register for a business number
+- Immigrant start-up visas
+- Self-employed immigrants
+- Business performance and ownership statistics
+
+## Steps
+
+### 1. Planning a business
+
+Assessing your readiness, choosing a business structure, market research and writing a business plan
+
+### 2. Choosing a business name
+
+Selecting a good name, checking if a name is taken, registering and protecting your business name
+
+### 3. Registering your business with the government
+
+Registering or incorporating your business, plus how to apply for a business number or tax account
+
+### 4. Applying for business permits and licences
+
+Permits and licences that you may need for your business from all three levels of government
+
+### 5. Getting business support and financing
+
+National and regional business support, including financing for immigrant and Indigenous entrepreneurs
+
+### 6. Free tax help for your business
+
+Meet with a liaison officer to learn about common errors, bookkeeping best practices, and deductions
+
+## Features
+
+### Supports for business
+
+Solutions to your business challenges right at your fingertips
+
+## On social media
+
+- Facebook: CanadaBusiness
+- Twitter: @CanadaBusiness
+- Instagram: cdnbusiness
+
+## From:
+
+- Innovation, Science and Economic Development Canada
+- Canada Revenue Agency
+
+## Page details

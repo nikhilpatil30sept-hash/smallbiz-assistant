@@ -1,0 +1,76 @@
+# Public pages used as the knowledge base. Every URL below was taken from the official
+# ontario.ca / canada.ca index pages on 2026-09-19 (several were also opened directly).
+# A second batch (food handler certification, employment standards, start-up costs) was
+# added on 2026-09-23 to cover process/checklist questions the first batch left thin.
+# fetch_sources.py reports any that fail, so pages that move are easy to spot.
+# Add your own URLs the same way, then run:
+#
+#     python fetch_sources.py
+#
+# license values:
+#   ogl_ontario      Open Government Licence - Ontario. Commercial use allowed with
+#                    attribution ("Contains information licensed under the Open
+#                    Government Licence - Ontario").
+#   crown_noncommercial
+#                    Government of Canada (canada.ca) terms: reproduction without
+#                    permission is for NON-COMMERCIAL use only, with title, author and
+#                    source URL cited. Fine for a private prototype. Get written
+#                    permission before using this content in a commercial product.
+
+sources:
+  # ---- Ontario: "Start a business in Ontario" 10-step guide -----------------
+  - url: https://www.ontario.ca/page/business/start
+    license: ogl_ontario
+  - url: https://www.ontario.ca/page/business/start/conduct-market-research
+    license: ogl_ontario
+  - url: https://www.ontario.ca/page/business/start/prepare-business-plan
+    license: ogl_ontario
+  - url: https://www.ontario.ca/page/business/start/decide-ownership-structure
+    license: ogl_ontario
+  - url: https://www.ontario.ca/page/business/start/register-your-business-online
+    license: ogl_ontario
+  - url: https://www.ontario.ca/page/business/start/check-licences-permits
+    license: ogl_ontario
+  - url: https://www.ontario.ca/page/business/start/confirm-hst
+    license: ogl_ontario
+  - url: https://www.ontario.ca/page/business/start/tax-obligations
+    license: ogl_ontario
+  - url: https://www.ontario.ca/page/business/start/business-insurance
+    license: ogl_ontario
+  - url: https://www.ontario.ca/page/business/start/understand-regulations
+    license: ogl_ontario
+  - url: https://www.ontario.ca/page/business/start/get-funding-or-more-help
+    license: ogl_ontario
+
+  # ---- Canada.ca: starting a business ---------------------------------------
+  - url: https://www.canada.ca/en/services/business/start.html
+    license: crown_noncommercial
+  - url: https://www.canada.ca/en/services/business/start/planning.html
+    license: crown_noncommercial
+  - url: https://www.canada.ca/en/services/business/start/choosing-a-business-name-1.html
+    license: crown_noncommercial
+  - url: https://www.canada.ca/en/services/business/start/register-with-gov.html
+    license: crown_noncommercial
+  - url: https://www.canada.ca/en/services/business/start/support-financing.html
+    license: crown_noncommercial
+  - url: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html
+    license: crown_noncommercial
+
+  # ---- Ontario: food premises / employment standards for a first hire -------
+  - url: https://www.ontario.ca/page/food-handler-training-and-certification
+    license: ogl_ontario
+  - url: https://www.ontario.ca/document/your-guide-employment-standards-act-0/small-business
+    license: ogl_ontario
+
+  # ---- Canada.ca: business costs and a start-up checklist -------------------
+  - url: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-expenses/business-start-costs.html
+    license: crown_noncommercial
+  - url: https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/checklist-small-businesses.html
+    license: crown_noncommercial
+
+  # ---- WSIB (workplace injury insurance) -------------------------------------
+  # Deliberately left out (decided 2026-09-23): wsib.ca carries only a generic "(c) WSIB"
+  # notice, no Open Government Licence or other stated reuse permission, unlike ontario.ca/
+  # canada.ca above. WSIB questions stay in the eval set's not_in_kb category - the assistant
+  # should say it has no official source rather than answer from an ungrounded page. Revisit
+  # if a clearer-licence WSIB source turns up, or with written permission from WSIB.

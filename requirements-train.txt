@@ -1,0 +1,19 @@
+# Install ONLY on the rented GPU box (RunPod / Colab), not on the Mac.
+# The Mac's .venv is for the RAG app (Phase 1/2/3 tooling) and doesn't need any of this.
+#
+# Usage: pip install -r requirements-train.txt
+#
+# psutil is pinned explicitly below - without a pin, pip's resolver backtracks through
+# nearly psutil's entire release history trying to satisfy accelerate/unsloth/bitsandbytes'
+# loose constraints on it, which can take a very long time or fail outright. Pinning it lets
+# the resolver skip that search entirely.
+
+psutil>=5.9.0
+torch>=2.1.0
+unsloth[cu121-torch230] @ git+https://github.com/unslothai/unsloth.git
+trl>=0.9.6
+peft>=0.11.1
+accelerate>=0.30.1
+bitsandbytes>=0.43.1
+datasets>=2.19.0
+transformers>=4.42.0

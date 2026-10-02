@@ -1,0 +1,10 @@
+{"id": 1, "question": "I want to start a small bakery in Ontario. What are the first steps?", "must_include": ["market research", "business plan", "ownership structure", "register"]}
+{"id": 2, "question": "Do I need to register a business name if I operate as a sole proprietor?", "must_include": ["Ontario Business Registry"]}
+{"id": 3, "question": "When do I have to start charging HST?", "must_include": ["HST", "threshold"]}
+{"id": 4, "question": "What is the difference between a sole proprietorship and a corporation?", "must_include": ["liability"]}
+{"id": 5, "question": "Where can I find funding or grants for a new business?", "must_include": ["funding"]}
+{"id": 6, "question": "How do I know if I need a licence or permit for my business?", "must_include": ["licence", "permit"]}
+{"id": 7, "question": "My customers pay me late and I keep running out of cash. What can I do?", "must_include": ["invoice", "buffer"]}
+{"id": 8, "question": "How do I work out how many sales I need to break even?", "must_include": ["fixed", "break-even"]}
+{"id": 9, "question": "Should I get business insurance?", "must_include": ["insurance"]}
+{"id": 10, "question": "What is the capital of France?", "must_include": [], "note": "Off-topic: should politely stay in scope."}
