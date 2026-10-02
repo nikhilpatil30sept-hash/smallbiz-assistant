@@ -178,7 +178,7 @@ class _FakeClient:
     scope_answer = "YES"
     calls: list = []
 
-    def __init__(self, host=None):
+    def __init__(self, host=None, **kwargs):
         pass
 
     def chat(self, model, messages, stream=False, options=None):

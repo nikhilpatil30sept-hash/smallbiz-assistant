@@ -1,0 +1,207 @@
+id,category,expect,question,answer,sources,pass,failed_checks,missing_facts,invented_numbers,judge_faithful,judge_helpful,judge_unsupported,MY_GRADE_1to5,MY_NOTES
+S001,process,answer,I want to start a small bakery in Ontario. What are the first steps?,"Based on the sources provided, the first steps to start a small bakery in Ontario are:
+
+1. Conduct market research to understand the industry and market that you will be operating in [1].
+2. Prepare a business plan that explains your business idea, short and long-term business goals, and what resources are available to start and operate your business [1].
+3. Decide on the ownership structure for your business. There are four types of business structures in Ontario, and each serves different legal and tax needs [1].
+4. Register your business online using the Ontario Business Registry if your business has employees, facilities, or offices in Ontario [4]. The registration fee depends on the type of business you are registering, and you will need a working email address and a valid debit or credit card for payment [4].
+5. Confirm if you need to charge HST, as most businesses in Ontario are required to register with the federal government for a GST / HST account and collect GST / HST on taxable sales [1].
+6. Understand your tax obligations, as you will need to report your personal income if you are self-employed or in a partnership [1].
+
+It's also recommended to consider business insurance, even if you operate a home-based business, as it's highly recommended [1].
+
+Please note that you should confirm with a lawyer or accountant to ensure you are meeting all the necessary requirements for your specific business.
+
+Additionally, you may want to consider contacting a Small Business Enterprise Centre near you for one-on-one business support and guidance [2].",https://www.ontario.ca/page/business/start; https://www.canada.ca/en/services/business/start.html; https://www.ontario.ca/page/business/start/get-funding-or-more-help; https://www.ontario.ca/page/business/start/register-your-business-online; https://www.ontario.ca/page/food-handler-training-and-certification,PASS,,,,,,,,
+S002,process,answer,I'm a freelance designer. What do I need to do to set up as a sole proprietor?,"As a freelance designer, you can set up as a sole proprietor. According to [1], a sole proprietorship is a business owned by one person, and it is the easiest and most common way to start a business. 
+
+To set up as a sole proprietor, you will need to register your business with the government. According to [2], you will need to register your sole proprietorship if you are not using your own name as your business name. If your business has employees, facilities, or offices in Ontario, you must register provincially.
+
+You can register your business online using the Ontario Business Registry. According to [6], you must register using the Ontario Business Registry if your business has employees, facilities, or offices in Ontario. You will need a working email address for online registration and a valid debit or credit card for payment. The registration fee depends on the type of business you are registering, and for a sole proprietorship, it is $60 [6].
+
+Before registering, you should also check if your business name is already taken by searching the Ontario Business Registry for free [6].
+
+It is recommended to confirm with a lawyer or accountant to ensure you are meeting all the necessary requirements for your specific situation.",https://www.ontario.ca/page/business/start/decide-ownership-structure; https://www.canada.ca/en/services/business/start/register-with-gov.html; https://www.canada.ca/en/services/business/start/planning.html; https://www.canada.ca/en/services/business/start.html; https://www.ontario.ca/page/business/start; https://www.ontario.ca/page/business/start/register-your-business-online,FAIL,facts,CPP/personal income,,,,,,
+S003,process,answer,Walk me through registering a corporation in Ontario.,"To register a corporation in Ontario, follow these steps:
+
+1. Decide on the ownership structure for your business: Choose a corporation as your business type [4].
+2. Register your business online: If your business has employees, facilities, or offices in Ontario, you must register using the Ontario Business Registry [1]. The registration fee for a Business Corporation is $300 [1].
+3. Order an Ontario-biased or weighted Nuans name search report to reserve your business name if you are not using a number name [1]. A Canada (federal) biased Nuans name search will not be accepted.
+4. You will be registered for a 9-digit Ontario Business Identification Number (BIN) from ServiceOntario [1]. You will need this number to incorporate.
+5. Before you incorporate, consult a lawyer or professional advisor [4].
+
+Please note that registering a corporation in Ontario involves more complex tax rules and requires annual filings and corporate records [4]. It is recommended to confirm with a lawyer or accountant to ensure you are meeting all the necessary requirements.
+
+It is also recommended to confirm with a lawyer, accountant, or the relevant government office to ensure you are meeting all the necessary requirements and to get personalized advice for your specific situation.",https://www.ontario.ca/page/business/start/register-your-business-online; https://www.canada.ca/en/services/business/start/register-with-gov.html; https://www.ontario.ca/page/business/start; https://www.ontario.ca/page/business/start/decide-ownership-structure,PASS,,,,,,,,
+S004,process,answer,What are the steps to register a partnership online in Ontario?,"To register a partnership online in Ontario, follow these steps:
+
+1. Search the Ontario Business Registry for free to find out if your business name is already taken [1].
+2. Select your type of business to begin registration, which is General Partnership for a partnership [1].
+3. Create an Ontario.ca Login and an Ontario Business Account during the set-up process [1].
+4. Pay the registration fee, which is $60 for a General Partnership [1].
+
+Please note that you will be registered for a 9-digit Ontario Business Identification Number (BIN) from ServiceOntario, which you will need for future business activities [1].
+
+It is recommended to confirm with a lawyer or accountant to ensure you are meeting all the necessary requirements for your specific business situation.",https://www.ontario.ca/page/business/start/register-your-business-online; https://www.ontario.ca/page/business/start; https://www.canada.ca/en/services/business/start/register-with-gov.html,PASS,,,,,,,,
+S005,process,answer,"I'm starting a home-based business. What should I know about insurance, licences and tax?","When starting a home-based business, consider business insurance, even though it's not mandatory [1]. You may need to register with the government before operating your business [5]. 
+
+To register, you'll need to know your main office location, other provinces and territories you'll operate in, your proposed business name, and the type of business that suits your needs [5]. 
+
+You'll need to choose your business type: corporation, sole proprietorship or partnership, or cooperative [5]. 
+
+For tax obligations, the Canada Revenue Agency (CRA) defines a business as an activity with a reasonable expectation of profit and evidence to support that intention for income tax purposes [2]. For GST/HST purposes, a business includes any activity, whether or not it's carried on for profit [2]. 
+
+You should report your personal income if you're self-employed, an unincorporated business, or in a partnership [2]. 
+
+Most businesses in Ontario are required to register with the federal government for a GST/HST account and collect GST/HST on taxable sales [3]. 
+
+You should understand your tax obligations and confirm if you need to charge HST [3]. 
+
+For more detailed information on tax obligations, including topics not covered in this checklist, go to Small businesses and self-employed income [2]. 
+
+A lawyer or accountant can help with tax and legal obligations.",https://www.ontario.ca/page/business/start/business-insurance; https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/checklist-small-businesses.html; https://www.ontario.ca/page/business/start; https://www.canada.ca/en/services/business/start.html; https://www.canada.ca/en/services/business/start/register-with-gov.html,FAIL,facts,BizPaL/licences,,,,,,
+S006,process,answer,I'm a student who wants to run a summer business. What help exists?,"As a student who wants to run a summer business, you may be eligible for the Summer Company program, which offers start-up money to kick off a new summer business, as well as advice and mentorship from local business leaders to help get the business up and running [1]. 
+
+You can refer to the Summer Company program for more information and to see if you qualify.
+
+Before starting your business, it's also a good idea to write a business plan, which can help you clarify your business idea and goals. You can find resources and templates to help you write a business plan on the Prepare business plan page [4].
+
+Additionally, you can contact your local Small Business Enterprise Centre for one-on-one help supporting your business [1].
+
+It's also recommended to confirm with a lawyer or accountant to ensure you are meeting all the necessary requirements for your summer business.
+
+Note: A lawyer or accountant can help you with any legal or tax implications of running a summer business.",https://www.ontario.ca/page/business/start/get-funding-or-more-help; https://www.canada.ca/en/services/business/start.html; https://www.canada.ca/en/services/business/start/support-financing.html; https://www.ontario.ca/page/business/start/prepare-business-plan; https://www.canada.ca/en/services/business/start/planning.html,PASS,,,,,,,,
+S007,process,answer,I'm 25 and want to start a business. What funding is out there?,"Based on the sources provided, there are several funding options available for you to consider:
+
+* As a young entrepreneur aged 18-39, you may be eligible for financing, mentoring, and support tools through Futurpreneur Canada [1].
+* You can also refer to a full list of all funding opportunities in Ontario [1].
+* Additionally, you can use the Business Benefits Finder to get a personalized list of programs and services to help your business [3].
+
+It's worth noting that there may be other funding options available that are not listed here. I recommend checking the full list of funding opportunities in Ontario and using the Business Benefits Finder to get a more comprehensive list of options.
+
+Before applying for any funding, I recommend confirming with a lawyer or accountant to ensure you understand the terms and conditions of each funding option and to get advice on which one is best for your business.
+
+Also, consider reaching out to your local Small Business Enterprise Centre for one-on-one help supporting your business [1].",https://www.ontario.ca/page/business/start/get-funding-or-more-help; https://www.canada.ca/en/services/business/start.html; https://www.canada.ca/en/services/business/start/support-financing.html,PASS,,,,,,,,
+S008,process,answer,What should I sort out before I hire my first employee in Ontario?,"Before hiring your first employee in Ontario, you should sort out the following:
+
+* Decide on the ownership structure for your business [2]. There are four types of business structures in Ontario, and each serves different legal and tax needs.
+* Register your business online using the Ontario Business Registry [3]. You will need to select your type of business and pay the registration fee, which depends on the type of business you are registering.
+* Confirm if you need to charge HST [2]. Most businesses in Ontario are required to register with the federal government for a GST / HST account and collect GST / HST on taxable sales.
+* Understand your tax obligations [2]. If you are self-employed, an unincorporated business, or in a partnership, you must report your personal income.
+* Understand the regulations that may apply to your business [2]. Learn about the regulations that may apply to your business, including employment standards.
+* Familiarize yourself with employment standards in Ontario [4]. This includes payment of wages, hours of work and overtime, vacations, public holidays, and leaves of absence.
+
+It's also recommended to get one-on-one business support from a Small Business Enterprise Centre [2] or a Regional Innovation Centre [2] to help you get started and succeed.
+
+Please confirm with a lawyer or accountant to ensure you are meeting all the necessary requirements for hiring your first employee in Ontario.",https://www.canada.ca/en/services/business/start.html; https://www.ontario.ca/page/business/start; https://www.ontario.ca/page/business/start/register-your-business-online; https://www.ontario.ca/document/your-guide-employment-standards-act-0/small-business; https://www.ontario.ca/page/business/start/get-funding-or-more-help,FAIL,right_source,,,,,,,
+S009,process,answer,How do I decide between a sole proprietorship and a corporation?,"To decide between a sole proprietorship and a corporation, consider the following factors:
+
+- As a sole proprietorship, you have full control of your company [1], but you are also responsible for all debts and losses, and creditors can take your personal assets and your business to pay debts [1].
+- On the other hand, a corporation provides limited liability, meaning you are not responsible for all debts and losses [1].
+- Sole proprietorships are easy and more affordable to set up [1], but corporations have more access to capital and grants [1].
+- Sole proprietorships have simpler tax rules, but corporations have more complex tax rules [1].
+- Sole proprietorships require less paperwork, but corporations need to provide annual filings and corporate records [1].
+
+It's also recommended to consult a lawyer or professional advisor before incorporating [1].
+
+If you're still unsure, consider consulting a lawyer or accountant for personalized advice, or contacting a business registration support service for guidance on the registration process [3].",https://www.ontario.ca/page/business/start/decide-ownership-structure; https://www.canada.ca/en/services/business/start/planning.html; https://www.canada.ca/en/services/business/start/register-with-gov.html,PASS,,,,,,,,
+S010,process,answer,What do I have to do to charge HST correctly?,"To charge HST correctly, you need to register with the federal government for a GST/HST account if your business makes $30,000 gross or more in four consecutive calendar quarters [2]. 
+
+You can get a business number or register for GST/HST online, even if you have a SIN that starts with 9 [1]. 
+
+To confirm if you need to charge HST, you can learn more about the GST/HST from Canada Revenue Agency [2]. 
+
+Before charging HST, it's recommended that you confirm with a lawyer or accountant to ensure you are meeting all the necessary requirements and following the correct procedures.",https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html; https://www.ontario.ca/page/business/start/confirm-hst,PASS,,,,,,,,
+S011,process,answer,Give me a checklist for launching a coffee shop in Ontario.,"Based on the sources provided, here is a checklist for launching a coffee shop in Ontario:
+
+1. **Conduct market research** [1]: Understand the industry and market that you will be operating in.
+2. **Prepare a business plan** [1]: Explain your business idea, short and long-term business goals, and what resources are available to start and operate your coffee shop.
+3. **Decide on the ownership structure for your business** [3]:
+	* Consider a sole proprietorship, partnership, corporation, or co-operative.
+	* Each has its pros and cons, such as liability, tax implications, and decision-making processes.
+4. **Register your business online** [5]:
+	* If your coffee shop has employees, facilities, or offices in Ontario, you must register using the Ontario Business Registry.
+	* You will need a working email address and a valid debit or credit card for payment.
+	* The registration fee depends on the type of business you are registering.
+5. **Confirm licences and permits** [1]: You may need licences and permits to run your coffee shop according to federal, provincial, or municipal regulations.
+6. **Confirm if you need to charge HST** [1]: Most businesses in Ontario are required to register with the federal government for a GST / HST account and collect GST / HST on taxable sales.
+7. **Understand your tax obligations** [1]: If you are self-employed, an unincorporated business, or in a partnership, you must report your personal income.
+8. **Consider business insurance** [1]: Although business insurance isn't mandatory, it's highly recommended, even if you operate a home-based business.
+9. **Understand the regulations** [1]: Learn the regulations that may apply to your coffee shop.
+10. **Get funding or more help** [4]: Financial help and more resources are available for small businesses and entrepreneurs. Consider applying for training, mentoring, and grants through programs like Starter Company Plus, Digital Main Street, or Futurpreneur.
+
+Please note that this checklist is not exhaustive, and you should consult with a lawyer or accountant to ensure you are meeting all the necessary requirements for launching a coffee shop in Ontario.",https://www.ontario.ca/page/business/start; https://www.canada.ca/en/services/business/start.html; https://www.ontario.ca/page/business/start/decide-ownership-structure; https://www.ontario.ca/page/business/start/get-funding-or-more-help; https://www.ontario.ca/page/business/start/register-your-business-online,PASS,,,,,,,,
+S012,process,answer,What costs should I plan for when starting a business?,"When starting a business, you should plan for various costs. According to [3], to be able to deduct a business expense, you need to have carried on a business in the fiscal period in which the expense was incurred. This means you need to be clear about the date your business started.
+
+[3] also states that the date when the business can be said to have commenced must be known. This implies that you should plan for costs related to the start-up and initial operations of your business.
+
+Additionally, [5] mentions that the CRA defines a business as an activity where there is a reasonable expectation of profit and there is evidence to support that intention. This means you should plan for costs that align with your business goals and intentions.
+
+It's also worth noting that [5] provides a checklist for small businesses, which includes information on income tax purposes, GST/HST purposes, and other business obligations. You may want to consult this checklist to ensure you're aware of all the costs associated with starting a business.
+
+To confirm the specific costs you should plan for, it's recommended that you consult with a lawyer or accountant, as they can provide personalized advice based on your business needs and circumstances.",https://www.canada.ca/en/services/business/start.html; https://www.ontario.ca/page/business/start/prepare-business-plan; https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-expenses/business-start-costs.html; https://www.canada.ca/en/services/business/start/planning.html; https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/checklist-small-businesses.html,FAIL,"facts, right_source",registration; insurance; rent/marketing/licensing,,,,,,
+U001,followup,answer,"When do I have to start charging HST? / Yes, I made $35,000 over the last four quarters. What should I do next?","Since you have made $35,000 over the last four quarters, you may need to charge GST/HST [1]. 
+
+To confirm if you need to charge HST, you can learn more about the GST/HST from Canada Revenue Agency [1]. 
+
+It's recommended to confirm with a lawyer or accountant to ensure you are meeting all the necessary requirements for your specific business situation.",https://www.ontario.ca/page/business/start/confirm-hst; https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html,FAIL,"facts, numbers_supported","register/GST/HST account; 30,000/threshold","$35,000",,,,,
+U002,followup,answer,I want to register a corporation in Ontario. / How much does that cost?,"According to the Ontario Business Registry, the registration fee for a Business Corporation is $300 [1]. You will also need to order an Ontario-biased or weighted Nuans name search report to reserve your business name if you are not using a number name, which may have an additional cost [1]. 
+
+Please note that before you incorporate, it is recommended to consult a lawyer or professional advisor [3].",https://www.ontario.ca/page/business/start/register-your-business-online; https://www.ontario.ca/page/business/start; https://www.ontario.ca/page/business/start/decide-ownership-structure; https://www.canada.ca/en/services/business/start/register-with-gov.html,PASS,,,,,,,,
+U003,followup,answer,Tell me about sole proprietorships. / What are the downsides?,"The downsides of a sole proprietorship are:
+
+- You are responsible for all debts and losses [1]
+- Creditors can take your personal assets and your business to pay debts [1]
+- Your business name is not protected [1]
+- Your income is taxable at your personal rate [1]
+
+If your business has employees, facilities, or offices in Ontario, you must register provincially [1].",https://www.ontario.ca/page/business/start/decide-ownership-structure; https://www.canada.ca/en/services/business/start/planning.html,PASS,,,,,,,,
+U004,followup,answer,What business structures can I choose from? / Which one protects my personal assets?,"According to [1], a sole proprietorship is a business owned by one person, and you are responsible for all debts and losses [1]. This means that your personal assets are not protected if your business incurs debts or losses.
+
+A corporation, on the other hand, is a legal entity that keeps the business separate from the business owner, and you have limited liability [1]. This means that your personal assets are protected if your business incurs debts or losses.
+
+Therefore, a corporation is the business structure that protects your personal assets.
+
+It's always a good idea to consult with a lawyer or professional advisor before making any business decisions, especially when it comes to liability and asset protection.",https://www.ontario.ca/page/business/start/decide-ownership-structure; https://www.ontario.ca/page/business/start/business-insurance,PASS,,,,,,,,
+U005,followup,answer,I'm starting a landscaping business. / Do I need any licences?,"You may need licences and permits to run your business according to federal, provincial, or municipal regulations [2]. Use BizPaL, a free online tool to find the licences and permits you need for your business. BizPaL filters permits based on your location, industry, and business activities [2].",https://www.canada.ca/en/services/business/start.html; https://www.ontario.ca/page/business/start/check-licences-permits; https://www.canada.ca/en/services/business/start/register-with-gov.html; https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/checklist-small-businesses.html; https://www.canada.ca/en/services/business/start/planning.html; https://www.ontario.ca/page/business/start/decide-ownership-structure,PASS,,,,,,,,
+U006,followup,answer,How do I register a business name? / And is checking availability free?,"According to [4], searching the Ontario Business Registry for free will allow you to find out if your business name is already taken.",https://www.canada.ca/en/services/business/start/choosing-a-business-name-1.html; https://www.canada.ca/en/services/business/start.html; https://www.canada.ca/en/services/business/start/register-with-gov.html; https://www.ontario.ca/page/business/start/register-your-business-online,PASS,,,,,,,,
+U007,followup,answer,Is business insurance required? / How many quotes should I get?,You should get at least 3 quotes for business insurance to find the best rate [1].,https://www.ontario.ca/page/business/start/business-insurance; https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/checklist-small-businesses.html; https://www.ontario.ca/page/business/start/prepare-business-plan; https://www.canada.ca/en/services/business/start/planning.html,PASS,,,,,,,,
+U008,followup,answer,I'm 30 and want to start a business. / Is there any loan for me?,"Based on the sources provided, it seems that you may be eligible for the following loans:
+
+* Futurpreneur provides financing, mentoring and support tools to aspiring business owners aged 18-39 [1].
+* If you are launching a side business, up to $15,000 in loan financing is available through Futurpreneur [1].
+* The Black Entrepreneurship Loan Fund is a partnership between the Government of Canada, Black-led business organizations, and several financial institutions. It provides loans of up to $250,000 to Black business owners and entrepreneurs across the country [1].
+* Indian Agricultural Program of Ontario offers small business financing to support First Nations entrepreneurs and businesses [1].
+* The Indigenous Entrepreneurship Startup Program provides start-up loan financing and up to two years of mentorship, plus access to resources and networking opportunities with entrepreneurs across Canada [1].
+* Waubetek provides a variety of programs and services for Aboriginal Entrepreneurs, First Nation Communities, Aboriginal Organizations through Aboriginal commercial financing and economic development initiatives [1].
+
+Please note that these are just some of the loan options available, and you may be eligible for others depending on your specific situation. It's always a good idea to consult with a financial advisor or a lawyer to determine the best course of action for your business.
+
+Also, please confirm with a lawyer or accountant to ensure that you understand the terms and conditions of any loan you may be eligible for.",https://www.ontario.ca/page/business/start/get-funding-or-more-help; https://www.canada.ca/en/services/business/start.html; https://www.canada.ca/en/services/business/start/support-financing.html; https://www.ontario.ca/page/business/start/prepare-business-plan,PASS,,,,,,,,
+U009,followup,answer,What is the Ontario BIN? / Is it the same as a CRA business number?,"No, it is not the same as a CRA business number. The Ontario Business Identification Number (BIN) from ServiceOntario is different than a Business Number (BN) that is provided by the CRA [1].",https://www.ontario.ca/page/business/start/register-your-business-online; https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/checklist-small-businesses.html; https://www.ontario.ca/page/business/start; https://www.ontario.ca/page/business/start/decide-ownership-structure; https://www.ontario.ca/page/business/start/understand-regulations; https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html,PASS,,,,,,,,
+U010,followup,answer,I'm a student. / Is there a program to help me start a summer business?,"Yes, there is a program to help you start a summer business. According to [1], Summer Company is a program for students that offers start-up money to kick off a new summer business, as well as advice and mentorship from local business leaders to help get the business up and running.
+
+Before applying, you may want to consider the steps to start a business in Ontario, which can be found in [4]. It's also a good idea to consult with a lawyer or accountant to confirm the legal and tax implications of starting a business.",https://www.ontario.ca/page/business/start/get-funding-or-more-help; https://www.canada.ca/en/services/business/start.html; https://www.canada.ca/en/services/business/start/support-financing.html; https://www.ontario.ca/page/business/start; https://www.ontario.ca/page/business/start/prepare-business-plan; https://www.canada.ca/en/services/business/start/planning.html,PASS,,,,,,,,
+U011,followup,answer,Tell me about co-operatives. / How are decisions made?,"Decisions in a co-operative are made democratically, with one member, one vote [1]. This means that all members have an equal say in the decision-making process, which can be beneficial for collaborative and community-driven businesses. However, it also means that decisions can take longer to make, as all members need to participate and agree [1].
+
+It's worth noting that co-operatives can be set up to operate for profit or as a not-for-profit, and can be registered provincially or federally [1]. If you are considering starting a co-operative, it's recommended that you consult a lawyer or professional advisor before incorporating [1].
+
+As a co-operative is a type of business structure, it's also worth considering the other options available, such as sole proprietorships, partnerships, and corporations. Each of these options has its own pros and cons, and it's essential to choose the one that best suits your business needs [1].
+
+Before making any decisions, it's recommended that you consult a lawyer or professional advisor to ensure that you are making an informed decision [1].",https://www.ontario.ca/page/business/start/decide-ownership-structure; https://www.canada.ca/en/services/business/start/planning.html,PASS,,,,,,,,
+U012,followup,answer,What is a Nuans report? / Who do I order it from?,"You order a Nuans report from a private name search company. According to [1], the Nuans report must be obtained from a private name search company and may be found online or you can find a local Nuans member to order your report.",https://www.ontario.ca/page/business/start/register-your-business-online; https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/checklist-small-businesses.html,PASS,,,,,,,,
+U013,followup,answer,I'm self-employed. / What taxes do I have to think about?,"As a self-employed individual, you must report your personal income and contribute to the Canada Pension Plan (CPP) every year [1]. You should also learn about the different taxes collected in Ontario, including corporations tax [1]. Additionally, you should learn what items are subject to HST [1] and find out if you're eligible for business tax credits [1].
+
+You should also be aware of the different types of business structures in Ontario, including sole proprietorships, partnerships, corporations, and co-operatives [3]. Each of these structures has its own pros and cons, and you should consider these when deciding on the ownership structure for your business [3].
+
+It's also a good idea to consult a lawyer or professional advisor before incorporating, as this can be a complex process [3]. If you're considering incorporating, you should be aware of the pros and cons of doing so, including the potential for limited liability and the need for annual filings and corporate records [3].
+
+For more detailed information on taxes and business structures, you can refer to the CRA's resources for small businesses and self-employed individuals [2]. This includes information on income tax, GST/HST, payroll, and other tax-related topics.
+
+It's also recommended to consult a lawyer or accountant to confirm the tax implications and legal requirements for your specific business situation.
+
+Please note that this is not a comprehensive or personalized advice, and you should consult a professional advisor for specific guidance on your business.",https://www.ontario.ca/page/business/start/tax-obligations; https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/checklist-small-businesses.html; https://www.ontario.ca/page/business/start/decide-ownership-structure,PASS,,,,,,,,
+U014,followup,answer,"When do I have to charge HST? / Actually, what is the registration fee for a sole proprietorship?",The registration fee for a sole proprietorship is $60 [3].,https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html; https://www.ontario.ca/page/business/start/confirm-hst; https://www.ontario.ca/page/business/start/register-your-business-online,PASS,,,,,,,,
+U015,followup,answer,I have a temporary SIN starting with 9. / How do I get a GST/HST number?,"You can get a business number or register for GST/HST online, even if you have a SIN that starts with 9 [2]. 
+
+A lawyer or accountant can help confirm the specific requirements for your situation.",https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html; https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/checklist-small-businesses.html,FAIL,facts,Business Registration Online/BRO,,,,,,

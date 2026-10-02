@@ -63,3 +63,9 @@ LEX_MAX_HITS = int(os.getenv("LEX_MAX_HITS", "3"))
 # sees lists and neighbouring sentences. A total budget keeps the prompt inside NUM_CTX.
 FULL_PAGE_MAX_CHARS = int(os.getenv("FULL_PAGE_MAX_CHARS", "4500"))
 MAX_TOTAL_SOURCE_CHARS = int(os.getenv("MAX_TOTAL_SOURCE_CHARS", "10000"))
+
+# --- Module 15: topic-aware retrieval for broad process questions -----------------------------
+DECOMPOSE = os.getenv("DECOMPOSE", "1") == "1"          # on by default (accepted 2026-10-02); DECOMPOSE=0 turns it off
+DECOMPOSE_MODEL = os.getenv("DECOMPOSE_MODEL", "")      # empty = use CHAT_MODEL
+DECOMPOSE_MAX = int(os.getenv("DECOMPOSE_MAX", "4"))    # topics per question
+DECOMPOSE_K = int(os.getenv("DECOMPOSE_K", "2"))        # chunks fetched per topic

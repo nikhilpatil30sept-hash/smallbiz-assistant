@@ -1,0 +1,83 @@
+id,category,expect,question,answer,sources,pass,failed_checks,missing_facts,invented_numbers,judge_faithful,judge_helpful,judge_unsupported,MY_GRADE_1to5,MY_NOTES
+S101,process,answer,What do I need to think about before opening a restaurant in Ontario?,"Before opening a restaurant in Ontario, you should consider the following:
+
+1. Food handler training and certification: You will need to ensure that your staff are properly trained and certified in food handling, as per the requirements outlined in [1]. This includes evaluating your application and potentially making modifications to your proposed program to get recognition.
+2. Licences and permits: You may need licences and permits to run your business according to federal, provincial, or municipal regulations. Use BizPaL, a free online tool, to find the licences and permits you need for your business, as per [3].
+3. Registration with the government: You will need to register your business with the government, as per [4] and [5]. This includes choosing your business type, registering online, and confirming licences and permits.
+4. GST/HST: You will need to register for a GST/HST account and collect GST/HST on taxable sales, as per [6]. This includes determining the rate to charge, managing receipts, and what to do with tax you collect.
+5. Business insurance: Although business insurance isn't mandatory, it's highly recommended, as per [5].
+6. Regulations: You will need to learn the regulations that may apply to your business, as per [5].
+7. Funding: You may need to consider funding options for your business, as per [5].
+
+It's recommended that you confirm with a lawyer or accountant to ensure you are meeting all the necessary requirements for opening a restaurant in Ontario.",https://www.ontario.ca/page/food-handler-training-and-certification; https://www.canada.ca/en/services/business/start.html; https://www.ontario.ca/page/business/start/check-licences-permits; https://www.canada.ca/en/services/business/start/register-with-gov.html; https://www.ontario.ca/page/business/start; https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html,PASS,,,,,,,,
+S102,process,answer,What do I need to sort out about taxes when I start a business?,"When starting a business, you need to sort out the following about taxes:
+
+- Determine if you have a reasonable expectation of profit and have evidence to support that intention, as this is how the Canada Revenue Agency (CRA) defines a business for income tax purposes [1].
+- Understand that for GST/HST purposes, a business includes any activity, whether or not it is carried on for profit, and any regular or continuous activity that involves supplying property by way of lease, licence, or similar arrangement [1].
+- Learn about the different taxes collected in Ontario, including corporations tax [6].
+- Find out if you need to register and pay Employer Health Tax [6].
+- Learn what items are subject to HST [6].
+- Find out if you're eligible for business tax credits [6].
+
+It's also recommended to consult the CRA's Small businesses and self-employed income page for more detailed information [1].
+
+Before making any decisions, it's a good idea to confirm with a lawyer or accountant to ensure you understand your specific tax obligations and responsibilities.",https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/checklist-small-businesses.html; https://www.canada.ca/en/services/business/start.html; https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-expenses/business-start-costs.html; https://www.canada.ca/en/services/business/start/register-with-gov.html; https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html; https://www.ontario.ca/page/business/start/tax-obligations,FAIL,facts,CPP/Canada Pension Plan,,,,,,
+S103,process,answer,What rules and regulations might apply once my business is open?,"Based on the sources provided, the following rules and regulations might apply once your business is open:
+
+* Accessibility for Ontario businesses: [3]
+* Employment standards: [3]
+* Workplace health and safety: [3]
+* GST/HST: [4] - you may need to register and start charging the GST/HST, and follow the rules for charging, remitting, and reporting the tax.
+* Employer Health Tax: [4] - you may need to register and pay Employer Health Tax if you have employees.
+* HST on certain items: [4] - you need to know what items are subject to HST.
+* Business tax credits: [4] - you may be eligible for business tax credits.
+
+It's also recommended to check if you need any licences and permits to run your business according to federal, provincial, or municipal regulations using BizPaL, a free online tool: [1].
+
+Please note that this is not an exhaustive list and you should consult a lawyer or accountant to confirm the specific rules and regulations that apply to your business.
+
+Also, as a reminder, it's always a good idea to confirm with a lawyer or accountant to ensure you are meeting all the necessary requirements and following the correct procedures for your business.",https://www.ontario.ca/page/business/start/check-licences-permits; https://www.canada.ca/en/services/business/start/register-with-gov.html; https://www.ontario.ca/page/business/start/understand-regulations; https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html; https://www.canada.ca/en/services/business/start.html; https://www.canada.ca/en/services/business/start/planning.html; https://www.ontario.ca/page/business/start/tax-obligations,PASS,,,,,,,,
+S104,process,answer,What should I do before I register my business?,"Before registering your business, you should know the following information:
+
+- where your main office will be located [1]
+- which other provinces and territories you plan to operate in [1]
+- your proposed business name (see Choosing a name ) [1]
+- the type of business that best suits your needs (see How to choose your business type ) [1]
+
+It's also a good idea to conduct market research on the following:
+
+- industry [2]
+- customer demographics and target markets [2]
+- competitors [2]
+- location [2]
+- financing [2]
+- business name and online presence [2]
+
+You may also want to consider writing a business plan, which explains your business idea, short and long-term business goals, and what resources are available to start and operate your business [5]. You can find resources to help you write a business plan, such as BDC, Futurpreneur, or BPlans [5].
+
+It's also recommended to consult a lawyer or professional advisor before incorporating your business [7].
+
+Please confirm with a lawyer or accountant to ensure you have all the necessary information before registering your business.",https://www.canada.ca/en/services/business/start/register-with-gov.html; https://www.ontario.ca/page/business/start/conduct-market-research; https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-expenses/business-start-costs.html; https://www.canada.ca/en/services/business/start.html; https://www.ontario.ca/page/business/start/prepare-business-plan; https://www.canada.ca/en/services/business/start/planning.html; https://www.ontario.ca/page/business/start/decide-ownership-structure,PASS,,,,,,,,
+U101,followup,answer,I'm opening a cafe in Ontario. / Does my staff need any food safety training?,"Yes, your staff needs food safety training. In Ontario, food premises are required to have at least one certified food handler on site during every hour that the food premises operates [1]. This means that you will need to ensure that at least one of your staff members is certified as a food handler.
+
+To become certified, your staff can take an approved commercial program, such as the Hospitality Training Action Centre's Food Handler Certification Training or the Independent First Nations Alliance's Food Safety Training. They can also take the Indigenous Services Canada First Nations and Inuit Health Food Safety Training.
+
+To become a recognized food handler training provider, organizations must apply to the Ministry of Health. However, this information is not relevant to your staff's need for food safety training.
+
+It is recommended that you confirm with a lawyer or a public health official to ensure that your staff meets the specific requirements for your cafe.
+
+Please note that you should also check with the Ministry of Health for the most up-to-date information on food safety training requirements.",https://www.ontario.ca/page/food-handler-training-and-certification,PASS,,,,,,,,
+U102,followup,answer,Is business insurance required? / Does that apply to a home-based business too?,"The sources do not specifically address whether the business structure options apply to a home-based business. However, they do mention that business insurance is recommended for home-based businesses [1]. 
+
+If you need guidance on business structure for a home-based business, a lawyer or accountant can help.",https://www.ontario.ca/page/business/start/business-insurance; https://www.canada.ca/en/services/business/start/register-with-gov.html; https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/checklist-small-businesses.html; https://www.canada.ca/en/services/business/start/planning.html; https://www.ontario.ca/page/business/start/decide-ownership-structure,PASS,,,,,,,,
+U103,followup,answer,How do I find out which licences and permits I need? / Does that cost anything?,"According to [1], BizPaL is a free online tool. There is no mention of any costs associated with using BizPaL.",https://www.ontario.ca/page/business/start/check-licences-permits; https://www.canada.ca/en/services/business/start.html; https://www.canada.ca/en/services/business/start/register-with-gov.html,PASS,,,,,,,,
+U104,followup,answer,I'm self-employed. / Do I have to pay into the Canada Pension Plan?,"As a self-employed individual, you must report your personal income and contribute to the Canada Pension Plan (CPP) every year [1].",https://www.ontario.ca/page/business/start/tax-obligations; https://www.ontario.ca/page/business/start/decide-ownership-structure; https://www.ontario.ca/page/business/start/confirm-hst; https://www.ontario.ca/page/business/start/register-your-business-online; https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/checklist-small-businesses.html,PASS,,,,,,,,
+U105,followup,answer,I want to hire my first employee. / What rules do I need to follow?,"According to [4], under the Employment Standards Act, 2000 (ESA), most employers and employees in Ontario have certain obligations and rights, known as “employment standards.” These include payment of wages, hours of work and overtime, vacations, public holidays, leaves of absence, and record keeping.
+
+Employers must keep written records about each employee for a certain time period, as stated in [4]. These records must be readily available for a Ministry of Labour, Immigration, Training and Skills Development employment standards officer if they ask for them.
+
+You can also use the Employment Standards Self-Service Tool to check compliance with hours of work, overtime, public holidays, termination, severance, and other employment standards entitlements, as mentioned in [4].
+
+Additionally, you should learn about the different taxes collected in Ontario, including corporations tax, and find out if you need to register and pay Employer Health Tax, as stated in [6].
+
+It is recommended that you confirm with a lawyer or accountant to ensure you are meeting all the necessary employment standards and tax obligations.",https://www.canada.ca/en/services/business/start.html; https://www.ontario.ca/page/business/start/check-licences-permits; https://www.canada.ca/en/services/business/start/register-with-gov.html; https://www.ontario.ca/document/your-guide-employment-standards-act-0/small-business; https://www.ontario.ca/page/business/start/understand-regulations; https://www.ontario.ca/page/business/start/tax-obligations; https://www.ontario.ca/page/food-handler-training-and-certification; https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html,PASS,,,,,,,,

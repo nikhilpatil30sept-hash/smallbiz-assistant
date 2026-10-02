@@ -43,6 +43,45 @@ def expand_acronyms(text: str) -> str:
     return _ACRONYM_RE.sub(add, text)
 
 
+# --- Module 15: topic-aware retrieval for broad "what do I need to..." questions -------------
+# A broad question ("What do I need to think about before opening a restaurant?") matches the
+# generic overview pages best, and the narrow pages that hold the facts (food handler
+# certification, tax obligations, regulations) never reach the model. When DECOMPOSE=1 the model
+# first lists the separate topics the question touches, and each topic is searched on its own.
+_BROAD_RE = re.compile(
+    r"\b(first steps|what do i need|what should i|what costs|what rules|what steps|sort out|"
+    r"think about|plan for|before (?:i|opening|hiring|starting|registering))\b", re.I)
+
+DECOMPOSE_PROMPT = (
+    "You help search a knowledge base about starting a small business in Ontario, Canada. "
+    "List the separate topics someone asking the question below needs information on, as short "
+    "search phrases (2-6 words each), one per line, at most {n}. Examples of topics: business "
+    "registration, business structure, tax obligations, HST, licences and permits, food handler "
+    "certification, insurance, hiring employees, employment standards, funding, business plan, "
+    "market research, start-up costs. Output only the phrases, nothing else.")
+
+
+def _is_broad(question: str) -> bool:
+    return bool(_BROAD_RE.search(question))
+
+
+def sub_queries(client, question: str) -> list[str]:
+    """Up to DECOMPOSE_MAX short topic phrases for a broad question ([] on any error)."""
+    try:
+        resp = client.chat(
+            model=config.DECOMPOSE_MODEL or config.CHAT_MODEL,
+            messages=[
+                {"role": "system", "content": DECOMPOSE_PROMPT.format(n=config.DECOMPOSE_MAX)},
+                {"role": "user", "content": question},
+            ],
+            options={"temperature": 0, "num_predict": 80, "num_ctx": config.NUM_CTX},
+        )
+        lines = [re.sub(r"^[\s\-\*\d\.\)]+", "", l).strip() for l in resp["message"]["content"].splitlines()]
+        return [l for l in lines if 3 <= len(l) <= 80][: config.DECOMPOSE_MAX]
+    except Exception:
+        return []
+
+
 def _last_user_message(history: list[dict] | None) -> str:
     for m in reversed(history or []):
         if m.get("role") == "user" and m.get("content"):
@@ -77,7 +116,8 @@ def _hit(cid: str, doc: str, meta: dict, similarity: float) -> dict:
     }
 
 
-def retrieve(question: str, k: int | None = None, history: list[dict] | None = None) -> list[dict]:
+def retrieve(question: str, k: int | None = None, history: list[dict] | None = None,
+             extra_queries: list[str] | None = None) -> list[dict]:
     """Return the top chunks (best first) that clear the similarity threshold.
 
     Short follow-ups like "Yes, I made $35,000. What next?" carry no topic on their own,
@@ -106,6 +146,23 @@ def retrieve(question: str, k: int | None = None, history: list[dict] | None = N
             if cid not in best or similarity > best[cid]["similarity"]:
                 best[cid] = _hit(cid, doc, meta, similarity)
     hits = sorted(best.values(), key=lambda h: h["similarity"], reverse=True)[:k]
+
+    if extra_queries:
+        # Topic searches (module 15). Their hits go AFTER the normal top-k, so the original
+        # ranking is never displaced; group_by_page's size budget trims anything excess.
+        seen = {h["id"] for h in hits}
+        eres = col.query(query_embeddings=embed([expand_acronyms(q) for q in extra_queries]),
+                         n_results=config.DECOMPOSE_K)
+        extra: list[dict] = []
+        for qi in range(len(extra_queries)):
+            for cid, doc, meta, dist in zip(
+                eres["ids"][qi], eres["documents"][qi], eres["metadatas"][qi], eres["distances"][qi]
+            ):
+                similarity = 1.0 - dist
+                if similarity >= config.MIN_SIMILARITY and cid not in seen:
+                    seen.add(cid)
+                    extra.append(_hit(cid, doc, meta, similarity))
+        hits = hits + sorted(extra, key=lambda h: h["similarity"], reverse=True)
 
     if config.KEYWORD_SEARCH:
         # Chunks holding the question's rare words (program names etc.) that the embedding
@@ -203,8 +260,9 @@ def answer_stream(question: str, history: list[dict] | None = None) -> tuple[lis
     """Return (sources, token_iterator). Sources are known before generation starts."""
     import ollama
 
-    sources = group_by_page(retrieve(question, history=history))
     client = ollama.Client(host=config.OLLAMA_HOST, timeout=config.REQUEST_TIMEOUT)
+    extra = sub_queries(client, question) if (config.DECOMPOSE and not history and _is_broad(question)) else None
+    sources = group_by_page(retrieve(question, history=history, extra_queries=extra))
 
     weak_match = not sources or max(s["similarity"] for s in sources) < config.SCOPE_CHECK_BELOW
     if weak_match and not is_in_scope(client, question, history):
